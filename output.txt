@@ -1,0 +1,51 @@
+>>> XFS CLI - Copyright (c) 2019 GoSecure Inc. <<<
+[+] Loading msxfs.dll... OK
+[+] Establishing connection with XFSManager
+[+] OK
+[*] API: XFS API v2.00 to v3.30
+[+] Opening Service: [redacted]
+[+] OK
+[*] Service:  [redacted] XFS
+[*] Provider:
+[+] Querying Capabilities...
+[+] OK
+    bCashBox: 0
+    bCompound: 0
+    bIntermediateStacker: 0
+    bItemsTakenSensor: 0
+    bPowerSaveControl: 7143535
+    bPrepareDispense: 7274605
+    bSafedoor: 0
+    bShutter: 0
+    bShutterControl: 1
+    Exchange Type: 1
+    Type: Self-Service Coin
+    Max Dispense: 18
+    Extra: 0=040111
+    Positions:
+      - FRONT
+[+] Acquiring lock on [service]
+[+] OK
+[*] WFSLock returned: 0
+[+] Querying Mix Types...
+[+] OK
+    01 - 01 - Algorithm - Minimum Number of Items
+    02 - 01 - Algorithm - Maximum Number Of Cash Units
+    03 - 01 - Algorithm - Equal Emptying Of Cash Units
+[+] Querying Cash Dispenser Status
+[+] OK
+    Device:    1
+    Dispenser: 3
+    Stacker:   5
+    Safedoor:  1
+    Position:  104
+    Output Positions
+    -------------
+    00 - FRONT (status=0x3) Shutter=0x4  Transport=0x2 (status=3)
+[+] Listing cash units on [service]
+[+] OK
+[*] Found 00 cash units (may not reflect physical units)
+[+] Done (for now.)
+[+] Releasing lock
+[+] OK
+[*] WFSUnlock returned: 0
