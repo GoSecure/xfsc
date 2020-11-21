@@ -54,7 +54,7 @@ static cmd_t cdm_commands[] = {
 Exercising a Cash Dispenser:
 
 ```
-open CashDispenser 1
+open CashDispenser_1
 list
 cdm info 1
 cdm dispense 1 100 USD
